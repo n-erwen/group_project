@@ -16,3 +16,25 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+//OPENSTREETMAP
+  var planes = [
+		["7C6B07",51.5669,0.1471],
+		["7C6B38",51.5073,0.1657],
+		["7C6CA1",51.5746,0.1308],
+		];
+
+        var map = L.map('map').setView([51.5074, 0.1277], 10);
+        mapLink =
+            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; ' + mapLink + ' Contributors',
+            maxZoom: 18,
+            }).addTo(map);
+
+		for (var i = 0; i < planes.length; i++) {
+			marker = new L.marker([planes[i][1],planes[i][2]])
+				.bindPopup(planes[i][0])
+				.addTo(map);
+		}
