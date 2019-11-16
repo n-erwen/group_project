@@ -19,15 +19,22 @@ anime.timeline({loop: true})
 
 //OPENSTREETMAP
   var planes = [
-		["The Parkland Walk Spriggan",51.5646,0.1047],
-		["Hyde Park",51.5073,0.1657],
-		["Bruce Castle Museum",51.5991,0.0754],
-    ["The Parkland Walk Spriggan",51.5646,0.1047],
-		["Hyde Park",51.5073,0.1657],
-		["Bruce Castle Museum",51.5991,0.0754],
+		["The Parkland Walk Spriggan",51.5646,-0.1047],
+		["Hyde Park",51.5073,-0.1657],
+		["Bruce Castle Museum",51.5991,-0.0754],
+    ["Old Operating Theatre Museum",51.504750,-0.088160],
+		["The Ten Bells",51.51935, -0.074336],
+		["Greenwich Foot Tunnel",51.4833,-0.0102],
+    ["Epping Forest",51.66, 0.05],
+		["The Viktor Wynd Museum of Curiosities",51.53473, -0.057571],
+		["The Flask",51.569722,-0.151111],
+    ["Bleeding Heart Yard",51.51929,-0.10697],
+		["St Bartholomew’s Hospital Museum",51.51746,-0.10009],
+		["Old Queen's Head",51.5373,-0.100447],
+    ["City of London Cemetery and Crematorium",51.555990,0.052500],
 		];
 
-        var map = L.map('map').setView([51.5074, 0.1277], 10);
+        var map = L.map('map').setView([51.5390,-0.1426], 10);
         mapLink =
             '<a href="http://openstreetmap.org">OpenStreetMap</a>';
         L.tileLayer(
