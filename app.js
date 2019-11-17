@@ -108,4 +108,18 @@ $(document).ready(function() {
         }
       }
     });
+
+    // Mobile Navigation
+    $('.js--nav-icon').click(function() {
+      var nav = $('.js--main-nav');
+      var icon = $('.js--nav-icon ion-icon');
+      nav.slideToggle(200);
+      if($('.ion-navicon-round').attr('name') == 'menu') {
+        $('.ion-navicon-round').attr('name','close');
+      } else {
+        $('.ion-navicon-round').attr('name','menu');
+      }
+    });
+
+
 });
