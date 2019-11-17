@@ -1,0 +1,78 @@
+/*Big tablets to 1200px*/
+@media only screen and (max-width: 1200px) {
+  .flip-card {
+    max-width: 400px;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1000px) {
+  footer {
+    font-size: 70%;
+  }
+  .plan-box {
+    width: 100%;
+    margin-left: 0;
+  }
+  .main-nav {
+    display: none;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+  .main-nav {
+    float: left;
+    margin-top: 25px;
+  }
+  .main-nav li {
+    display: block;
+  }
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+  }
+  .sticky .mobile-nav-icon ion-icon {
+    color: #555;
+  }
+  h1 {
+    font-size: 250%;
+    margin-top: 20%;
+  }
+  .learn-more {
+    padding: 0;
+    margin: 0;
+  }
+  .main-nav-about {
+    display: inline-block !important;
+    float: right !important;
+  }
+  .about {
+    padding-top: 100px !important;
+  }
+
+}
+
+/*Small phones to small tablets from 481 to 767px*/
+@media only screen and (max-width: 767px) {
+  .plan-box {
+    margin-bottom: 10%;
+  }
+  h1 {
+    font-size: 200%;
+    margin-top: 60%;
+  }
+  .flip-card-back {
+    font-size: 90%;
+  }
+  .logo-about {
+    height: 60px;
+    margin-left: 20px;
+  }
+
+}
+/*small phones from 0 to 400px */
+@media only screen and (max-width: 400px) {
+
+
+}

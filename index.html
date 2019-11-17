@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--- stylesheet - this should come after the bootstrap stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- media queries stylesheet -->
+    <link rel="stylesheet" type="text/css" href="queries.css">
     <!--- google font -->
     <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Raleway:300,400&display=swap" rel="stylesheet">
     <!-- OpenStreetMap stylesheet -->
@@ -21,13 +23,14 @@
         <div>
           <img class="logo" src="css/img/fulllogohaunted.png" alt="Haunted in London logo">
           <img class="logo-black" src="css/img/fulllogohaunted.png" alt="Haunted in London logo">
-          <ul class="main-nav">
+          <ul class="main-nav js--main-nav">
             <li><a href="#features">Featured</a></li>
             <li><a href="#locations">Locations</a></li>
             <li><a href="#packages">Packages</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu" class="ion-navicon-round"></ion-icon></a>
         </div>
       </nav>
 
@@ -105,7 +108,7 @@
 
         <div class="row">
 
-          <div class="col-md">
+          <div class="col-sm-12 col-lg-6-12 col-lg-6">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -119,13 +122,13 @@
                   <h3>Old Operating Theatre<br> Museum</h3>
                   <p>It sort of goes without saying this place is probably haunted; it was an actual surgical practice back when surgery was pretty, well, raw.</p>
                   <p><ion-icon name="pin"></ion-icon> Borough and London Bridge</p>
-                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/museums/old-operating-theatre-museum" target="_blank">Learn more</a>
+                  <a class="btn btn-primary btn-full learn-more" href="https://www.timeout.com/london/museums/old-operating-theatre-museum" target="_blank">Learn more</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md">
+          <div class="col-sm-12 col-lg-6">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -149,7 +152,7 @@
 
         <div class="row">
 
-          <div class="col-md">
+          <div class="col-sm-12 col-lg-6">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -169,7 +172,7 @@
             </div>
           </div>
 
-          <div class="col-md">
+          <div class="col-sm-12 col-lg-6">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -193,7 +196,7 @@
 
         <div class="row">
 
-          <div class="col-md">
+          <div class="col-sm-12 col-lg-6">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -213,7 +216,7 @@
             </div>
           </div>
 
-          <div class="col-md">
+          <div class="col-sm-12 col-lg-6">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -237,7 +240,7 @@
 
         <div class="row">
 
-          <div class="col-md">
+          <div class="col-sm-12 col-lg-6">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -257,7 +260,7 @@
             </div>
           </div>
 
-          <div class="col-md">
+          <div class="col-sm-12 col-lg-6">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -281,7 +284,7 @@
 
         <div class="row">
 
-          <div class="col-md">
+          <div class="col-sm-12 col-lg-6">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -301,7 +304,7 @@
             </div>
           </div>
 
-          <div class="col-md">
+          <div class="col-sm-12 col-lg-6">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -342,7 +345,7 @@
 
           <div class="row">
 
-            <div class="col-md">
+            <div class="col-sm-12 col-lg-6-12 col-md-4">
               <div class="plan-box">
                 <div>
                   <h3>Horror</h3>
@@ -361,7 +364,7 @@
               </div>
             </div>
 
-            <div class="col-md">
+            <div class="col-sm-12 col-lg-6-12 col-md-4">
               <div class="plan-box">
                 <div>
                   <h3>Candle</h3>
@@ -380,7 +383,7 @@
               </div>
             </div>
 
-            <div class="col-md">
+            <div class="col-sm-12 col-lg-6-12 col-md-4">
               <div class="plan-box">
                 <div>
                   <h3>Pumpkin</h3>
@@ -403,6 +406,86 @@
           <p class="disclaimer">*Disclaimer: this website was created for practising purposes therefore all packages shown above are fictional.</p>
         </div>
     </section>
+
+    <!--contact section-->
+    <section class="section-form">
+    <div class="container">
+
+    <h2>We're happy to hear from you.</h2>
+    <img src="css/img/Bottom-Dark.png" alt="Halloween divider" class="divider divider-light">
+
+    <div class="row">
+      <form method="post" action="#" class="contact-form">
+
+        <div class="row">
+          <div class="col-sm">
+            <label for="name">Name</label>
+          </div>
+
+          <div class="col span-2-of-3">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <label for="email">Email</label>
+          </div>
+
+          <div class="col-sm">
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <label for="find-us">How did you find us?</label>
+          </div>
+
+          <div class="col-sm">
+            <select name="find-us" id="find-us">
+              <option value="friends" selected>Friends</option>
+              <option value="search">Search engine</option>
+              <option value="a">Advertisement</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <label>Newsletter?</label>
+          </div>
+
+          <div class="col-sm">
+            <input type="checkbox" name="news" id="news"> <span  class="newsletter">Yes, I would like to receive newsletters from Haunted in London.</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <label>Drop us a line</label>
+          </div>
+
+          <div class="col-sm">
+            <textarea name="message" placeholder="Your message"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <label>&nbsp;</label>
+          </div>
+
+          <div class="col-sm">
+            <a class="btn btn-outline-primary btn-full" href="#">Book Now</a>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  </section>
 
     <footer>
         <div class="row">
