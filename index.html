@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--- stylesheet - this should come after the bootstrap stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Raleway:300,400&display=swap" rel="stylesheet">
+    <!-- OpenStreetMap stylesheet -->
+    <link rel="stylesheet" href="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7/leaflet.css" />
+    <title>Haunted in London</title>
+  </head>
+  <body>
+
+    <!--HEADER-->
+    <header>
+      <nav>
+        <div>
+          <img class="logo" src="css/img/fulllogohaunted.png" alt="Haunted in London logo">
+          <img class="logo-black" src="css/img/fulllogohaunted.png" alt="Haunted in London logo">
+          <ul class="main-nav">
+            <li><a href="#features">Featured</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="welcome container">
+        <h1>Haunted <span class="welcome-small">in</span> London</h1>
+        <p>Welcome to Zombie Ipsum</p><!-- subtitle -->
+        <div>
+          <a class="btn btn-primary btn-full js--scroll-to-featured" href="#">Must see</a>
+          <a class="btn btn-outline-primary btn-ghost js--scroll-to-packages" href="#">Book a tour</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- FEATURED SECTION -->
+    <section class="featured js--section-featured" id="features">
+      <div class="container">
+
+        <!-- FADEIN HEADLINE -->
+        <h2 class="fadein">The spookiest places in London</h2>
+        <img src="css/img/Bottom-Dark.png" alt="Halloween divider" class="divider">
+
+        <!-- BOOTSTRAP CAROUSEL -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="css/img/hyde_park.jpg" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hyde park</h5>
+                <p>Chill factor <ion-icon name="bug"></ion-icon><ion-icon name="bug"></ion-icon><ion-icon name="bug"></ion-icon><ion-icon name="bug"></ion-icon></p>
+                <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/attractions/hyde-park" target="_blank">Learn more</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="css/img/parkland.jpg" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The Parkland Walk Spriggan</h5>
+                <p>Chill factor <ion-icon name="bug"></ion-icon><ion-icon name="bug"></ion-icon><ion-icon name="bug"></ion-icon></p>
+                <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/attractions/finsbury-park" target="_blank">Learn more</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="css/img/bruce.jpg" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Bruce Castle Museum</h5>
+                <p>Chill factor <ion-icon name="bug"></ion-icon><ion-icon name="bug"></ion-icon><ion-icon name="bug"></ion-icon><ion-icon name="bug"></ion-icon></p>
+                <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/museums/bruce-castle-museum" target="_blank">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ALL FLIPCARD SECTION -->
+    <section class="all" id="locations">
+      <div class="container">
+
+        <!-- FADEIN HEADLINE -->
+        <h2>London's scariest places</h2>
+        <img src="css/img/Bottom-Dark.png" alt="Halloween divider" class="divider">
+
+        <div class="row">
+
+          <div class="col-md">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="css/img/oldoperating.jpg" alt="Old Operating Theatre Museum" style="width:100%;height:100%;">
+                  <div class="placename">
+                    <h3>Old Operating Theatre<br> Museum</h3>
+                    <p>Flip <ion-icon name="refresh"></ion-icon></p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Old Operating Theatre<br> Museum</h3>
+                  <p>It sort of goes without saying this place is probably haunted; it was an actual surgical practice back when surgery was pretty, well, raw.</p>
+                  <p><ion-icon name="pin"></ion-icon> Borough and London Bridge</p>
+                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/museums/old-operating-theatre-museum" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="css/img/tenbells.jpg" alt="The Ten Bells" style="width:100%;height:100%;">
+                  <div class="placename">
+                    <h3>The Ten Bells</h3>
+                    <p>Flip <ion-icon name="refresh"></ion-icon></p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>The Ten Bells</h3>
+                  <p>Once called the Jack the Ripper, this Spitalfields pub can't get away from its gory former namesake.</p>
+                  <p><ion-icon name="pin"></ion-icon> Spitalfields</p>
+                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/bars-and-pubs/the-ten-bells" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="css/img/greenwich_tunnel.jpg" alt="Greenwich Foot Tunnel" style="width:100%;height:100%;">
+                  <div class="placename">
+                    <h3>Greenwich Foot Tunnel</h3>
+                    <p>Flip <ion-icon name="refresh"></ion-icon></p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Greenwich Foot Tunnel</h3>
+                  <p>You know that moment when you’re on the Eurostar, sitting 380ft below sea level? Imagine that, but you’re strolling on foot beneath the Thames.</p>
+                  <p><ion-icon name="pin"></ion-icon> Greenwich</p>
+                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/attractions/greenwich-foot-tunnel" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="css/img/epping_forest.jpg" alt="Epping Forest" style="width:100%;height:100%;">
+                  <div class="placename">
+                    <h3>Epping Forest</h3>
+                    <p>Flip <ion-icon name="refresh"></ion-icon></p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Epping Forest</h3>
+                  <p>This corridor of woodland in Essex has likely been the site of many dodgy and hastily done burials thanks to its size and collection of semi-deserted open spaces.</p>
+                  <p><ion-icon name="pin"></ion-icon> Essex</p>
+                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/outdoor/epping-forest" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="css/img/viktor_wynd.jpg" alt="The Viktor Wynd Museum of Curiosities" style="width:100%;height:100%;">
+                  <div class="placename">
+                    <h3>Viktor Wynd Museum of Curiosities</h3>
+                    <p>Flip <ion-icon name="refresh"></ion-icon></p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Viktor Wynd Museum of Curiosities</h3>
+                  <p>Viktor Wynd’s Museum of Curiosities is just that, a cramped shop filled to the brim with oddball curios for the public’s viewing pleasure.</p>
+                  <p><ion-icon name="pin"></ion-icon> Hackney</p>
+                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/museums/the-viktor-wynd-museum-of-curiosities-fine-art-natural-history" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="css/img/flask.jpg" alt="The Flask" style="width:100%;height:100%;">
+                  <div class="placename">
+                    <h3>The Flask</h3>
+                    <p>Flip <ion-icon name="refresh"></ion-icon></p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>The Flask</h3>
+                  <p>It doesn’t look scary, but Highgate's historic pub 'The Flask' boasts not one, but two hauntings.</p>
+                  <p><ion-icon name="pin"></ion-icon> Highgate</p>
+                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/bars-and-pubs/the-flask" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="css/img/bleeding_heart.jpg" alt="Bleeding Heart Yard" style="width:100%;height:100%;">
+                  <div class="placename">
+                    <h3>Bleeding Heart Yard</h3>
+                    <p>Flip <ion-icon name="refresh"></ion-icon></p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Bleeding Heart Yard</h3>
+                  <p>The name of this small square is enough to give you chills. It might look pleasant enough, but Bleeding Heart Yard in Farringdon has a horrific history.</p>
+                  <p><ion-icon name="pin"></ion-icon> Farringdon and Smithfield</p>
+                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/restaurants/bleeding-heart-yard" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="css/img/bartholomew.jpg" alt="St Bartholomew’s Hospital Museum" style="width:100%;height:100%;">
+                  <div class="placename">
+                    <h3>St Bartholomew’s Hospital Museum</h3>
+                    <p>Flip <ion-icon name="refresh"></ion-icon></p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>St Bartholomew’s Hospital Museum</h3>
+                  <p>Barts is the oldest hospital in Britain (dating back to 1123), but sadly walls can’t talk, so it’s distilled its history into a museum in its north wing.</p>
+                  <p><ion-icon name="pin"></ion-icon> Farringdon and Smithfield</p>
+                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/museums/st-bartholomews-hospital-museum" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="css/img/old_queen.jpg" alt="Old Queen's Head" style="width:100%;height:100%;">
+                  <div class="placename">
+                    <h3>Old Queen's Head</h3>
+                    <p>Flip <ion-icon name="refresh"></ion-icon></p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Old Queen's Head</h3>
+                  <p>This Islington boozer is said to be the location of dark goings-on – The Old Queen's House is haunted by both a lady and a little girl.</p>
+                  <p><ion-icon name="pin"></ion-icon> Angel</p>
+                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/nightlife/old-queens-head" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="css/img/london_cemetery.jpg" alt="City of London Cemetery and Crematorium" style="width:100%;height:100%;">
+                  <div class="placename">
+                    <h3>City of London Cemetery and Crematorium</h3>
+                    <p>Flip <ion-icon name="refresh"></ion-icon></p>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>City of London Cemetery and Crematorium</h3>
+                  <p>Since the mid 1970's locals have complainted about a brilliant orange light emanating from one of the tombstones in the western section.</p>
+                  <p><ion-icon name="pin"></ion-icon> Manor Park</p>
+                  <a class="btn btn-primary btn-full" href="https://www.timeout.com/london/things-to-do/city-of-london-cemetery-and-crematorium" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- map section -->
+    <section>
+    <div id="map" style="width: 100%; height: 400px"></div>
+    </section>
+
+
+    <!-- pricing section -->
+    <section class="section-plans js--section-packages" id="packages">
+        <div class="container">
+
+          <!-- FADEIN HEADLINE -->
+          <h2>Book a Guided Tour*</h2>
+          <img src="css/img/Bottom-Dark.png" alt="Halloween divider" class="divider">
+
+          <div class="row">
+
+            <div class="col-md">
+              <div class="plan-box">
+                <div>
+                  <h3>Horror</h3>
+                  <p class="plan-price">£30 <span>/ person</span></p>
+                </div>
+                <div>
+                  <ul>
+                    <li><ion-icon name="checkmark"></ion-icon> Captive agony</li>
+                    <li><ion-icon name="checkmark"></ion-icon> Fatal or chilling is</li>
+                    <li><ion-icon name="checkmark"></ion-icon> Grotesque Halloween exorcism</li>
+                  </ul>
+                </div>
+                <div>
+                  <a class="btn btn-primary btn-full" href="#">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="plan-box">
+                <div>
+                  <h3>Candle</h3>
+                  <p class="plan-price">£20 <span>/ person</span></p>
+                </div>
+                <div>
+                  <ul>
+                    <li><ion-icon name="checkmark"></ion-icon> Dungeon in a gruesome</li>
+                    <li><ion-icon name="checkmark"></ion-icon> Morbid convulsing</li>
+                    <li><ion-icon name="checkmark"></ion-icon> Rotten fatal bleak</li>
+                  </ul>
+                </div>
+                <div>
+                  <a class="btn btn-outline-primary btn-ghost" href="#">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="plan-box">
+                <div>
+                  <h3>Pumpkin</h3>
+                  <p class="plan-price">£10 <span>/ person</span></p>
+                </div>
+                <div>
+                  <ul>
+                    <li><ion-icon name="checkmark"></ion-icon> Pain needles commodo nightmare</li>
+                    <li><ion-icon name="checkmark"></ion-icon> Anthrax putrid</li>
+                    <li><ion-icon name="checkmark"></ion-icon> Disturbing an</li>
+                  </ul>
+                </div>
+                <div>
+                  <a class="btn btn-outline-primary btn-ghost" href="#">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <p class="disclaimer">*Disclaimer: this website was created for practising purposes therefore all packages shown above are fictional.</p>
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section class="contact-us" id="contact">
+    <div id="after_submit"></div>
+    <form id="contact" action="#" method="POST" enctype="multipart/form-data">
+    <div style="text-align:center">
+
+    <!-- FADEIN HEADLINE -->
+      <h2>Contact Us</h2>
+      <img src="css/img/Bottom-Dark.png" alt="Halloween divider" class="divider">
+
+      <input name="skip_WhereToSend" type="hidden" value="my@email.com" />
+
+      <table border="0" cellpadding="20" cellspacing="20" width="100%" align="center">
+      <tr>
+      <td><b>Name:</b></td>
+      <td><input name="Name" type="text" maxlength="60" style="width:350px;"/></td>
+      </tr><tr>
+      <td><b>Phone number:</b></td>
+      <td><input name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
+      </tr><tr>
+      <td><b>Email address:</b></td>
+      <td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
+      </tr><tr>
+      <td><b>Comments:</b></td>
+      <td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
+      </tr><tr>
+      <td colspan="2" align="center"> <br />
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><td colspan="2" style="padding-bottom:18px;">
+      <input name="skip_Submit" type="submit" value="Submit" />
+      </td></tr>
+      </table><br />
+      </form>
+<div>
+
+    <footer>
+        <div class="row">
+
+          <div class="col-md">
+            <ul class="footer-nav">
+              <li><a href="#features">Featured</a></li>
+              <li><a href="#locations">Locations</a></li>
+              <li><a href="#packages">Packages</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md">
+            <ul class="social">
+              <li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-googleplus" class="googleplus"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
+            </ul>
+          </div>
+
+        </div>
+        <p>Copyright &copy; 2019 by Halloweb</p>
+    </footer>
+
+    <!-- JS for fade in text -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Open Street map API -->
+    <script src="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7/leaflet.js"></script>
+    <!--BOOTSTRAP JS: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Jquery Sticky Nav -->
+    <script src="jquery.waypoints.min.js"></script>
+    <!-- Ionicon script tag -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--  MAIN JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
