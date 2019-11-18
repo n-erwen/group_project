@@ -6,7 +6,7 @@
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1023px) {
   footer {
     font-size: 70%;
   }
@@ -39,10 +39,6 @@
     font-size: 250%;
     margin-top: 20%;
   }
-  .learn-more {
-    padding: 0;
-    margin: 0;
-  }
   .main-nav-about {
     display: inline-block !important;
     float: right !important;
@@ -60,19 +56,61 @@
   }
   h1 {
     font-size: 200%;
-    margin-top: 60%;
+    margin-top: 90%;
   }
   .flip-card-back {
-    font-size: 90%;
+    font-size: 70%;
   }
   .logo-about {
     height: 60px;
     margin-left: 20px;
   }
-
+  .logo {
+    height: 60px;
+    margin-left: 20px;
+  }
+  .book-now-btn {
+    padding: 10px !important;
+  }
+  .learn-more-btn {
+    padding: 10px !important;
+  }
+  .section-form {
+    font-size: 90%;
+    height: auto;
+  }
+  .about {
+    width: 90%;
+  }
+  .hamburger-items {
+    z-index: 999 !important;
+    position: relative;
+    font-size: 70% !important;
+    padding: 2% !important;
+  }
+  h3 {
+    font-size: 120% !important;
+  }
 }
 /*small phones from 0 to 400px */
 @media only screen and (max-width: 400px) {
-
+  .flip-card-back {
+    font-size: 75%;
+  }
+  .logo {
+    height: 40px;
+    margin-left: 10px;
+  }
+  .section-form {
+    font-size: 80%;
+    height: auto;
+  }
+  .book-now-btn {
+    padding: 5px !important;
+  }
+  h1 {
+    font-size: 150%;
+    margin-top: 90%;
+  }
 
 }
