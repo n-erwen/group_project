@@ -386,7 +386,7 @@ header {
   padding: 7%;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: auto;
   background-attachment: fixed;
 }
 
@@ -445,6 +445,7 @@ textarea:focus
   border: 1px solid #e67e22;
   outline: 0;
 }
+
 
 /*About us section */
 .body-about {
