@@ -109,7 +109,9 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  box-shadow: 0 -25px 25px 0px #ebebeb inset;
+  -webkit-box-shadow: box-shadow: 0 -25px 25px 0px #ebebeb inset; /*Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: box-shadow: 0 -25px 25px 0px #ebebeb inset; /* Firefox 3.5 -3.6 */
+  box-shadow: 0 -25px 25px 0px #ebebeb inset; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   background-attachment: fixed;
 }
 .welcome {
@@ -196,7 +198,9 @@ header {
   left: 0;
   width: 100%;
   background-color: rgba(255,255,255,0.98);
-  box-shadow: 0 2px 2px #efefef;
+  -webkit-box-shadow: box-shadow: 0 2px 2px #efefef; /*Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: box-shadow: 0 2px 2px #efefef; /* Firefox 3.5 -3.6 */
+  box-shadow: 0 2px 2px #efefef; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   z-index: 9999;
 }
 .sticky .main-nav li a:link,
@@ -223,9 +227,13 @@ header {
   background-repeat: no-repeat;
   height: auto;
   padding: 7%;
+  -webkit-box-shadow: 0 20px 15px -3px rgba(0,0,0,.75); /*Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 20px 15px -3px rgba(0,0,0,.75); /* Firefox 3.5 -3.6 */
   box-shadow: 0 20px 15px -3px rgba(0,0,0,.75);
 }
 .carousel {
+  -webkit-box-shadow: 0 0 25px 5px rgba(0,0,0,.75); /*Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 0 25px 5px rgba(0,0,0,.75);
   box-shadow: 0 0 25px 5px rgba(0,0,0,.75);
   border-radius: 50%;
   overflow: hidden;
@@ -349,6 +357,8 @@ header {
   width: 90%;
   margin-left: 5%;
   box-shadow: 0 2px 2px #efefef;
+  -webkit-box-shadow: 0 2px 2px #efefef; /*Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 2px 2px #efefef;
 }
 .plan-box div {
   padding: 15px;
